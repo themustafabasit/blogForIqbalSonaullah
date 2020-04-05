@@ -1,0 +1,352 @@
+.level_1_footer,
+.level_2_footer,
+.level_3_footer {}
+
+.inside_level_1 {
+    padding: 10px;
+    overflow: auto;
+
+}
+
+.footer_container {
+    float: left;
+
+}
+
+.footer_container_right {
+    float: right !important;
+}
+
+
+.footer_container_heading {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Segoe UI", Roboto, "Noto Sans", Ubuntu, "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #3b5998;
+    margin-bottom: 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.footer_links a,
+.footer_container_sub_heading,
+.connect_with li,
+.copy_right li {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Segoe UI", Roboto, "Noto Sans", Ubuntu, "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #3b5998;
+    margin-bottom: 6px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: left;
+    transition: all .2s ease;
+    padding: 0 5px;
+}
+.footer_links{
+    display: block;
+    overflow: auto;
+    width: 180px;
+}
+.footer_links a{
+    display: inline-block;
+    float: left;
+    clear: both;
+    border-radius: 4px;
+}
+.footer_links a:hover {
+    color: white;
+    background: #3f51b5;
+    text-transform: uppercase;
+}
+
+
+
+
+.footer_container_sub_heading {}
+
+.footer_input_holder {
+    display: block;
+    height: 55px;
+    overflow: auto;
+}
+
+.footer_email {
+    float: left;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    margin-right: 20px;
+    width: 400px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(193, 199, 208);
+    border-radius: 3px;
+    padding: 0px 12px;
+    font: bold 14px sans-serif;
+    color: #f44336
+}
+.footer_email:invalid {
+    color: #f44336;
+}
+.footer_email:valid {
+    color: #0fc955;
+    border-color:  #0fc955;;
+
+}
+.footer_email::placeholder {
+    color: #0fc955;
+}
+
+
+.footer_submit {
+    float: left;
+    display: block;
+    color: #3b5998;
+    background: #f4f5f7;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 0 30px;
+    border-color: #3b5998;
+    font-family: "Segoe UI", Roboto, "Noto Sans", Ubuntu, "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    height: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+    vertical-align: middle;
+    transition: all .4s ease-out;
+}
+
+.footer_submit:hover {
+    background: #3b5998;
+    color: white;
+}
+
+.level_2_footer {
+    text-align: left;
+}
+
+.social {
+    display: inline-block;
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.connect_with {
+    display: inline-block !important;
+    margin-right: 15px;
+    float: left;
+    height: 60px;
+}
+
+.connect_with li {
+    display: inline-block !important;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.footer_fB_tw_insta {
+    float: left;
+    display: inline-block;
+}
+
+.footer_fB_tw_insta a {
+    width: 50px;
+    display: inline-block;
+    border: none;
+    border-radius: 50%;
+
+}
+
+.footer_fB_tw_insta img {
+    display: inline-block;
+    padding: 2px;
+    width: 50px;
+    transition: all .4s ease-out;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.footer_fB_tw_insta a:hover {
+    animation-name: jump;
+    animation-duration: .3s;
+}
+
+.copy_right {
+    text-align: center;
+}
+
+.copy_right li {
+    text-align: center !important;
+}
+
+.copy_right li a {
+    text-transform: lowercase !important;
+    background: #3b5998 !important;
+    color:  white !important;
+    margin-left: 8px;
+    text-decoration: none;
+    transition: all .4s ease;
+    padding: 0 5px;
+}
+
+.copy_right li a:hover {
+    background: white !important;
+    color: #3b5998 !important;
+    text-decoration:underline;
+}
+
+.level_3_footer {
+    text-align: right;
+    padding: 20px 0px;
+    overflow: visible;
+    padding:20px 30px 45px 30px !important;
+}
+
+.inside_level_3 {
+    display: inline-block;
+    overflow: visible;
+}
+
+.meet_dev_heading{
+    margin-bottom: 55px;
+}
+
+
+.meet_dev_heading li{
+    display: inline-block;
+    font-size: 40px;
+    font-weight:bold;
+    font-family:  "Segoe UI", Roboto, "Noto Sans", Ubuntu, "Droid Sans", "Helvetica Neue", sans-serif;
+    background: #3b5998;
+    color: white;
+    text-transform: uppercase;
+}
+
+.meet_dev {
+    overflow: visible;
+    display: inline-block;
+}
+
+
+.basit,
+.wasit,
+.meet {
+    display: inline-block;
+    float: right;
+    margin-bottom: 6px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bold;
+    font-family:  "Segoe UI", Roboto, "Noto Sans", Ubuntu, "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #3b5998;
+}
+
+.meet {
+    margin-right: 10px;
+}
+
+
+.basit,
+.wasit {
+    position: relative;
+    text-transform: capitalize;
+    text-decoration: underline;
+    padding-left: 107px;
+    overflow: visible;
+	transition: all .3s ease;
+}
+
+.wasit {
+    margin-left: 15px;
+}
+
+.basit:hover,
+.wasit:hover {
+    text-decoration: none;
+    color: #3f51b5;
+}
+.wasit img,
+.basit img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 4px solid white;
+    box-shadow: 0 0 6px black;
+    border-radius: 50%;
+    left: 0;
+    top: calc(50% - 50px);
+}
+.wasit img:hover,
+.basit img:hover{
+    text-decoration: underline;
+    animation-name: jump !important;
+    animation-duration: .3s;
+}
+/*
+.basit::before,
+.wasit::before {
+    content: '';
+    position: absolute;
+    width: 80px;  /* 80 + 4(border) + 4(border)  = 88  */
+  /*  height: 80px;
+    left: 0px;
+    top: calc(50% - 44px);
+    border-radius: 50%;
+    transition: all .4s ease-out;
+    border: 4px solid white;
+    box-shadow: 0 0 6px black;
+}
+
+.basit::before {
+    background-image: url('../../global/images/basit_dp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover !important;
+}
+
+.wasit::before {
+    background-image: url('../../global/images/wasit_dp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover !important;
+}
+
+.basit:hover::before,
+.wasit:hover::before {
+    text-decoration: underline;
+    animation-name: jump !important;
+    animation-duration: .3s;
+}
+*/
+.level_3_footer,
+.level_4_footer {
+    background: white;
+    border: 1px solid #eeeeee;
+}
+.level_4_footer {
+    padding: 25px 30px 25px 3px; 
+
+}

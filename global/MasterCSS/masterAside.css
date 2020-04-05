@@ -1,0 +1,284 @@
+.heading_container {
+    overflow: auto;
+    border-bottom: 5px solid #607D8B;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.fb_holder {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.like_tittle {
+    text-align: right;
+
+}
+
+.like_tittle p {
+    font: normal 11px sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    background: #3b5998;
+    color: white;
+    padding: 5px 15px;
+    margin-right: 5px;
+}
+
+
+
+.heading {
+    display: inline-block;
+    float: left;
+    border: none;
+    background: #607D8B;
+    color: white;
+    font: normal 18px sans-serif;
+    padding: 6px 20px;
+    padding-top: 11px;
+    /* 6+5*/
+    text-transform: uppercase;
+}
+
+.poster_container {
+    display: block;
+    opacity: 1;
+    transition: all .4s ease-out;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    overflow: auto;
+}
+
+.poster {
+    display: block;
+    position: relative;
+    border: 1px solid #bbb;
+    transition: all .4s ease-out;
+    box-shadow: 1px 3px 5px #aaa;
+}
+
+.poster:hover {
+    opacity: .8;
+}
+
+.poster_container img {
+    width: 100%;
+}
+
+.poster_container span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-transform: capitalize;
+    font: normal 13px lato, open sans, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all .4s ease;
+    text-align: justify;
+}
+
+.poster_container_footer {
+    border: none;
+    margin-top: 10px;
+    overflow: visible;
+}
+
+.poster_container_footer::after {
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+
+.poster_container_footer .date,
+.poster_container_footer .by,
+.poster_container_footer .name_and_image_container,
+.poster_container_footer .tag,
+.poster_container_footer .share {
+    display: inline-block;
+    border: none;
+    text-transform: capitalize;
+    border: none;
+}
+
+.poster_container_footer .date,
+.poster_container_footer .by,
+.poster_container_footer .name_and_image_container {
+    float: left;
+}
+
+.poster_container_footer .tag,
+.poster_container_footer .share {
+    float: right;
+}
+
+.poster_container_footer .date {
+    color: #888;
+    font: normal 10px sans-serif;
+    margin-left: 10px;
+}
+
+.poster_container_footer .by {
+    color: #555;
+    text-transform: uppercase;
+    font: normal 10px sans-serif;
+    margin-left: 5px;
+}
+
+.poster_container_footer .name_and_image_container {
+    position: relative;
+    margin-left: 5px;
+    overflow: visible;
+    border: none;
+}
+
+.name {
+    display: inline-block;
+    border: none;
+    text-decoration: underline;
+    color: limegreen;
+    font: normal 11px sans-serif;
+    border: none;
+    padding: 0 3px;
+    overflow: visible;
+}
+
+.image_container {
+    transform: scale(0);
+    border: none;
+    position: absolute;
+    bottom: 100%;
+    left: -20px;
+    width: 80px;
+}
+
+.image_container a {
+    position: relative;
+    display: block;
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+    transition: all .2s ease-out;
+    margin-bottom: 0px;
+}
+
+.image_container img {
+    display: block;
+    border-radius: 50%;
+    border: none;
+    z-index: 100;
+}
+
+.name_and_image_container:hover .image_container a {
+    opacity: 1;
+    margin-bottom: 5px;
+}
+
+.name_and_image_container:hover .image_container {
+    transform: scale(1);
+}
+
+.poster_container_footer .tag,
+.poster_container_footer .share {
+    position: relative;
+    padding-left: 12px;
+    border: none;
+    color: #999;
+    font: normal 11px sans-serif;
+    text-decoration: none;
+}
+
+.poster_container_footer .tag {}
+
+.poster_container_footer .share {
+    margin-left: 10px;
+}
+
+.poster_container_footer .tag:hover,
+.poster_container_footer .share:hover {
+    text-decoration: underline;
+}
+
+.poster_container_footer .tag::before {
+    content: '\f012';
+}
+
+.poster_container_footer .share::before {
+    content: '\f012';
+}
+
+.poster_container_footer .tag::before,
+.poster_container_footer .share::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s ease-out;
+}
+
+.poster_container_footer .tag:hover::before,
+.poster_container_footer .share:hover::before {
+    animation-name: spin;
+    animation-duration: .2s;
+    transition-timing-function: linear;
+    color: limegreen;
+}
+
+
+
+.poster_caption {
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+
+.poster_caption a {
+    display: block;
+    color: #606060;
+    font: normal 16px lato, open sans, sans-serif;
+    text-decoration: none;
+    text-align: left;
+}
+
+.poster_caption li {
+    color: #606060;
+    font: normal 16px sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+
+}
+
+.poster_caption a:hover {
+    text-decoration: underline;
+
+}
+
+
+@keyframes spin {
+    from {
+        transform: translateY(0px)
+    }
+
+    50% {
+        transform: translateY(-6px)
+    }
+
+    to {
+        transform: translateY(0px)
+    }
+}

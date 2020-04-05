@@ -1,0 +1,98 @@
+.row {
+    text-align: left;
+}
+
+.leave_a_comment {
+    font-size: 20px !important;
+    font-family: arial !important;
+    text-transform: capitalize !important;
+    color: black !important;
+}
+
+.form_type_text,
+.form_type_email,
+.form_type_link {
+    width: 350px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, .12);
+    background: #fff;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.form_type_file{
+    width: 350px;
+}
+
+.form_type_textarea {
+    width: 750px;
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, .12);
+    background: #fff;
+    margin-right: 10px;
+    padding: 10px;
+
+}
+
+.form_type_select{
+    width: 200px;
+}
+.form_type_submit:disabled,
+.form_type_button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+.form_type_submit,
+.form_type_button {
+    font: 700 14px sans-serif;
+    border: none;
+    background: #ffd401;
+    box-shadow: 0 3px 0 0 #ccaa01;
+    color: #333;
+    border-radius: 3px;
+    padding: 18px 50px;
+    cursor: pointer;
+    margin: 26px 0px;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    color: tomato !important;
+    border: 1px solid tomato !important;
+}
+
+.after_submit li {
+    font: normal 23px sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+}
+.error_message{
+    display: inline-block;
+}
+
+/*montserrat*/
+
+.after_submit .successmessage {
+    color: #00BCD4;
+}
+
+.after_submit .errormessage {
+    color: red;
+    text-align: left;
+}
+
+.after_submit .rollback_s {
+    color: green;
+}
+
+.form_type_email {
+}
+
+.form_type_text {
+    text-transform: uppercase;
+}
+
